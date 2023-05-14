@@ -14,7 +14,7 @@ class MySpectralClustering():
 
     def fit(self, X):
         self.X = X
-
+        print('rfrf')
         affinity = self.affinity_matrix(X)
         degree = self.degree_matrix(affinity)
         laplacian = self.laplacian_matrix(affinity, degree)
